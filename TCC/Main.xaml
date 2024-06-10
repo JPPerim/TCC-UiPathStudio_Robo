@@ -1,0 +1,355 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="790,3917" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="800,3852" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="Tabela" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadCsvFile PathResource="{x:Null}" DataTable="[Tabela]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV" FilePath="C:\Users\jperi\OneDrive\Documentos\UVA 2024.1\TCC\BOTS\PathUI\3.csv" sap:VirtualizedContainerService.HintSize="738,186" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Nova guia" sap:VirtualizedContainerService.HintSize="738,3578" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7460bc9f-67b7-4497-aaf3-af2cf3fbfa37" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="704,3338" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Tabela]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="642,3251" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="608,3062" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cadastrar'" sap:VirtualizedContainerService.HintSize="546,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7460bc9f-67b7-4497-aaf3-af2cf3fbfa37" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="file:///C:/Users/jperi/OneDrive/Documentos/UVA%202024.1/TCC/CODE/SITE/index.html" CVScreenId="dc8bf526-0800-45fa-a18a-5b2e75114acb" CvElementArea="494, 624, 166, 67" CvTextArea="505, 642, 144, 28" CvTextArgument="Cadastrar" CvType="Button" DesignTimeRectangle="495, 627, 164, 61" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='buttonCadastro' aaname='Cadastrar' check:innerText='Cadastrar' /&gt;" Guid="07e1725e-9e8a-4f80-b283-a1895a3ee754" InformativeScreenshot="1746a7ca7784be19523496a34048fdc1.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='VERIFICADOR DE PROCESSOS ROBÓTICOS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NSetText DisplayName="Set Text 'BOT ID'" sap:VirtualizedContainerService.HintSize="546,194" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="7460bc9f-67b7-4497-aaf3-af2cf3fbfa37" Text="UIPath_300_3_20240531" Version="V3">
+                      <uix:NSetText.Target>
+                        <uix:TargetAnchorable BrowserURL="file:///C:/Users/jperi/OneDrive/Documentos/UVA%202024.1/TCC/CODE/SITE/cadastro.html" CVScreenId="7527cd76-facb-477d-920c-5a390941596b" CvElementArea="218, 350, 217, 25" CvType="InputBox" DesignTimeRectangle="220, 352, 214, 21" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='fbot_id' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='fbot_id' tag='INPUT' type='text' class='' aaname='BOT ID' /&gt;" Guid="d30d4d4c-6642-41d7-a89a-0cc097f586dc" InformativeScreenshot="2be79d15d55e1bc62fa1103eb835a584.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='VERIFICADOR DE PROCESSOS ROBÓTICOS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="7527cd76-facb-477d-920c-5a390941596b" CvTextArea="302, 334, 50, 15" CvTextArgument="BOT ID" CvType="Text" DesignTimeRectangle="303, 333, 49, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='BOT ID' check:innerText='BOT ID' /&gt;" Guid="24e8c42c-ccf8-4dd5-a097-4c6e066fa6ae" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSetText.Target>
+                    </uix:NSetText>
+                    <uix:NSetText DisplayName="Set Text 'NOME'" sap:VirtualizedContainerService.HintSize="546,194" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="7460bc9f-67b7-4497-aaf3-af2cf3fbfa37" Text="[CurrentRow(0).ToString]" Version="V3">
+                      <uix:NSetText.Target>
+                        <uix:TargetAnchorable BrowserURL="file:///C:/Users/jperi/OneDrive/Documentos/UVA%202024.1/TCC/CODE/SITE/cadastro.html" CVScreenId="27324237-f5da-4d81-ab92-29fdb098f26a" CvElementArea="218, 409, 216, 24" CvType="InputBox" DesignTimeRectangle="220, 411, 214, 21" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='fnome' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='fnome' tag='INPUT' type='text' class='' aaname='NOME' /&gt;" Guid="b124b38a-eef7-4bb9-95f3-36a9d10134cc" InformativeScreenshot="4d81486b76961a4e9cd5b6aedb74cb4d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='VERIFICADOR DE PROCESSOS ROBÓTICOS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="27324237-f5da-4d81-ab92-29fdb098f26a" CvTextArea="303, 393, 48, 15" CvTextArgument="NOME" CvType="Text" DesignTimeRectangle="305, 392, 45, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='NOME' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='NOME' tag='LABEL' type='' class='' check:innerText='NOME' /&gt;" Guid="44275447-997d-43f0-8f30-3e403d1fd823" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSetText.Target>
+                    </uix:NSetText>
+                    <uix:NSetText DisplayName="Set Text 'ID (NÚMEROS)'" sap:VirtualizedContainerService.HintSize="546,194" sap2010:WorkflowViewState.IdRef="NSetText_3" ScopeIdentifier="7460bc9f-67b7-4497-aaf3-af2cf3fbfa37" Text="[CurrentRow(1).ToString]" Version="V3">
+                      <uix:NSetText.Target>
+                        <uix:TargetAnchorable BrowserURL="file:///C:/Users/jperi/OneDrive/Documentos/UVA%202024.1/TCC/CODE/SITE/cadastro.html" CVScreenId="27324237-f5da-4d81-ab92-29fdb098f26a" CvElementArea="219, 468, 215, 23" CvType="InputBox" DesignTimeRectangle="220, 470, 214, 21" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='fid_num' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='fid_num' tag='INPUT' type='text' class='' aaname='ID (NÚMEROS)' /&gt;" Guid="c1ee175b-c147-4fc9-87c9-d58ce5d3fd20" InformativeScreenshot="3e99c0a523815fce2ca3a31c35eb9c1a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='VERIFICADOR DE PROCESSOS ROBÓTICOS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="27324237-f5da-4d81-ab92-29fdb098f26a" CvTextArea="274, 449, 107, 22" CvTextArgument="ID (NUMEROS)" CvType="Text" DesignTimeRectangle="275, 451, 105, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='ID (NÚMEROS)' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='ID (NÚMEROS)' tag='LABEL' type='' class='' check:innerText='ID (NÚMEROS)' /&gt;" Guid="620c7a8f-cc9a-4e7c-800b-26c6cf927b50" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSetText.Target>
+                    </uix:NSetText>
+                    <uix:NSetText DisplayName="Set Text 'DATA DE NASCIMENTO'" sap:VirtualizedContainerService.HintSize="546,194" sap2010:WorkflowViewState.IdRef="NSetText_4" ScopeIdentifier="7460bc9f-67b7-4497-aaf3-af2cf3fbfa37" Text="[CurrentRow(2).ToString]" Version="V3">
+                      <uix:NSetText.Target>
+                        <uix:TargetAnchorable BrowserURL="file:///C:/Users/jperi/OneDrive/Documentos/UVA%202024.1/TCC/CODE/SITE/cadastro.html" DesignTimeRectangle="478, 370, 135, 21" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='fdata_nasc' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='fdata_nasc' tag='INPUT' type='text' class='' aaname='DATA DE NASCIMENTO' /&gt;" Guid="de5d7322-6c02-400e-b5a8-48fd17f9c925" InformativeScreenshot="e9cd30d6c45075e97110ca7cc9101648.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='VERIFICADOR DE PROCESSOS ROBÓTICOS' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="32d7d4c3-598b-4350-85a9-0a819a23743b" CvTextArea="461, 352, 169, 15" CvTextArgument="DATA DE NASCIMENTO" CvType="Text" DesignTimeRectangle="462, 351, 167, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='DATA DE NASCIMENTO' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='DATA DE NASCIMENTO' tag='LABEL' type='' class='' check:innerText='DATA DE NASCIMENTO' /&gt;" Guid="810f3c76-c8d0-406a-9ffc-bd5d52d7a812" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSetText.Target>
+                    </uix:NSetText>
+                    <uix:NSetText DisplayName="Set Text 'ID2 (NÚMEROS + LETRAS)'" sap:VirtualizedContainerService.HintSize="546,194" sap2010:WorkflowViewState.IdRef="NSetText_5" ScopeIdentifier="7460bc9f-67b7-4497-aaf3-af2cf3fbfa37" Text="[CurrentRow(3).ToString]" Version="V3">
+                      <uix:NSetText.Target>
+                        <uix:TargetAnchorable BrowserURL="file:///C:/Users/jperi/OneDrive/Documentos/UVA%202024.1/TCC/CODE/SITE/cadastro.html" DesignTimeRectangle="562, 384, 161, 21" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='fid2_num_char' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='fid2_num_char' tag='INPUT' type='text' class='' aaname='ID2 (NÚMEROS + LETRAS)' /&gt;" Guid="24f6197e-6e13-4b67-abfe-7e2b0dc0137a" InformativeScreenshot="38d577b4788ba63b25e314d6374ed0d7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='VERIFICADOR DE PROCESSOS ROBÓTICOS' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="3e455262-1b8f-4201-8c14-6ab8ce3bcc0a" CvTextArea="547, 365, 190, 19" CvTextArgument="ID2 (NUMEROS + LETRAS)" CvType="Text" DesignTimeRectangle="548, 365, 188, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='ID2 (NÚMEROS + LETRAS)' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='ID2 (NÚMEROS + LETRAS)' tag='LABEL' type='' class='' check:innerText='ID2 (NÚMEROS + LETRAS)' /&gt;" Guid="e9192c1d-53aa-409b-8967-737ee57902ff" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSetText.Target>
+                    </uix:NSetText>
+                    <If Condition="[CurrentRow(4).ToString = &quot;m&quot;]" sap:VirtualizedContainerService.HintSize="546,1319" sap2010:WorkflowViewState.IdRef="If_2">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,301" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Masculino'" sap:VirtualizedContainerService.HintSize="354,216" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7460bc9f-67b7-4497-aaf3-af2cf3fbfa37" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="file:///C:/Users/jperi/OneDrive/Documentos/UVA%202024.1/TCC/CODE/SITE/cadastro.html" CVScreenId="27324237-f5da-4d81-ab92-29fdb098f26a" CvElementArea="159, 528, 21, 20" CvType="Icon" DesignTimeRectangle="156, 532, 26, 13" DesignTimeScaleFactor="1" ElementType="RadioButton" FullSelectorArgument="&lt;webctrl id='fgen_m' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='fgen_m' tag='INPUT' type='radio' class='' aaname='' /&gt;" Guid="d14e6602-444e-4539-a9ca-b9d48c2958d3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAARCAYAAADKZhx3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADfSURBVEhL1ZRBCoMwEEV7nFJKlxa33bXL3qHddOOmuNJqd/YwHsALeAEv4D0CIy9YEBlJFkLagQch+TOfIclstrtIQvAfxvtDLEnylKIoJU1TC2v2ONNylvA2Pl+ukucvqeta+r4XY4yFNXtZlluNlqvhZXyMT7a7rutkKThDg1arMcfLuCzf0rbtaLEcaNBqNeY4jemgqj5jaXeg9enaaXy7P+wd+gZacrRaU5zGvNimacay7kBLjlZryu92HOyOIcirBjoI8o+BqcR04g61ycVUW31yfQkyq9cmkHEkA/EBHJm/ZBoMAAAAAElFTkSuQmCC" InformativeScreenshot="fd1d3dc5c7ef20f15d0dc9a6abeb90f8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='VERIFICADOR DE PROCESSOS ROBÓTICOS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="27324237-f5da-4d81-ab92-29fdb098f26a" CvTextArea="187, 531, 76, 15" CvTextArgument="Masculino" CvType="Text" DesignTimeRectangle="188, 530, 74, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Masculino' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Masculino' tag='LABEL' type='' class='' check:innerText='Masculino' /&gt;" Guid="2cda5a35-6e96-452f-a592-cfed81eb39be" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                          </uix:NClick>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="512,848" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If Condition="[CurrentRow(4).ToString = &quot;f&quot;]" sap:VirtualizedContainerService.HintSize="450,763" sap2010:WorkflowViewState.IdRef="If_3">
+                            <If.Then>
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,301" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Feminino'" sap:VirtualizedContainerService.HintSize="354,216" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7460bc9f-67b7-4497-aaf3-af2cf3fbfa37" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="file:///C:/Users/jperi/OneDrive/Documentos/UVA%202024.1/TCC/CODE/SITE/cadastro.html" CVScreenId="27324237-f5da-4d81-ab92-29fdb098f26a" CvElementArea="275, 528, 18, 20" CvType="RadioButton" DesignTimeRectangle="271, 532, 26, 13" DesignTimeScaleFactor="1" ElementType="RadioButton" FullSelectorArgument="&lt;webctrl id='fgen_f' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='fgen_f' tag='INPUT' type='radio' class='' aaname='' /&gt;" Guid="46827bb1-6ed8-4577-895f-4ab42934e7a4" InformativeScreenshot="66e65a05b0335dab6e05024b043ed946.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='VERIFICADOR DE PROCESSOS ROBÓTICOS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CVScreenId="27324237-f5da-4d81-ab92-29fdb098f26a" CvTextArea="303, 531, 68, 15" CvTextArgument="Feminino" CvType="Text" DesignTimeRectangle="304, 530, 66, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Feminino' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Feminino' tag='LABEL' type='' class='' check:innerText='Feminino' /&gt;" Guid="6b8a6a13-a79e-4330-b747-25454fd9b64a" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                </uix:NClick>
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,301" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Não Declarar'" sap:VirtualizedContainerService.HintSize="354,216" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7460bc9f-67b7-4497-aaf3-af2cf3fbfa37" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="file:///C:/Users/jperi/OneDrive/Documentos/UVA%202024.1/TCC/CODE/SITE/cadastro.html" CVScreenId="c1858078-d283-4373-a3f1-acb55d70a1bf" CvElementArea="306, 547, 18, 19" CvType="RadioButton" DesignTimeRectangle="307, 550, 15, 13" DesignTimeScaleFactor="1" ElementType="RadioButton" FullSelectorArgument="&lt;webctrl id='fgen_nd' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='fgen_nd' tag='INPUT' type='radio' class='' aaname='' /&gt;" Guid="27f01fed-b5ec-4cc5-9d64-5182f4e12e54" InformativeScreenshot="ecd8ae0e09fcb280b106aa30c6691edf.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='VERIFICADOR DE PROCESSOS ROBÓTICOS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                </uix:NClick>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SALVAR'" sap:VirtualizedContainerService.HintSize="546,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7460bc9f-67b7-4497-aaf3-af2cf3fbfa37" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="file:///C:/Users/jperi/OneDrive/Documentos/UVA%202024.1/TCC/CODE/SITE/cadastro.html" CVScreenId="27324237-f5da-4d81-ab92-29fdb098f26a" CvElementArea="268, 646, 118, 57" CvTextArea="280, 663, 94, 22" CvTextArgument="SALVAR" CvType="Button" DesignTimeRectangle="270, 649, 115, 52" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='buttonSalvar' aaname='SALVAR' check:innerText='SALVAR' /&gt;" Guid="5b2ee2a9-5a04-469e-818b-695989ac643e" InformativeScreenshot="596537483db4dec66ce731969c388bac.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='VERIFICADOR DE PROCESSOS ROBÓTICOS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="546,238" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(esc)][u(hk)]" Version="V3">
+                      <uix:NKeyboardShortcuts.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NKeyboardShortcuts.VerifyOptions>
+                    </uix:NKeyboardShortcuts>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="815, 222, 1209, 867" BrowserType="Edge" ContentHash="ToOvAJiQikW_93G91czzzw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAQhJREFUWEftl9ENwjAMRDsCIzAKm8AGsAGMwEaMwgiMQP0qTkKy09YkfCDypJNKnFzckLTu0AnYmW6mh+nZUHjuTbOcTdHglmKOkINJnS6mjSlCfTLgdTJpLKvsYIkI0nGOTxIQ3Bhjmcsh49Kdi5oE8GYs+8ux1libczv9ylOcZ20CWsZaOYqBgKup9pg6ioHG9AR6Ar+XAG8wjtz9dS2y7SKdAEaKYSyy7UIxRymAiWKYi2y7UMxRCvCaxghjrkW2XaQTaE1PoCdQnEfHZ6kkq0ElWZiAilIqnm9xNDFHWJRSKis7KuOWK4HX+zdH9IieaFXvzWlxhXl66e9oJfYXnuEHyT8zDCPMjw3PbnWtNQAAAABJRU5ErkJggg==" InformativeScreenshot="4940e1420d24b1ba1db615786756db72.png" Reference="_xrZBePVRECVKjQH3s78Kw/uYV5iCcQ80qvkYGuK1u97Q" Selector="&lt;html app='msedge.exe' url='file:///C:/Users/jperi/OneDrive/Documentos/UVA%202024.1/TCC/CODE/SITE/index.html' /&gt;" Title="Nova guia" Url="file:///C:/Users/jperi/OneDrive/Documentos/UVA%202024.1/TCC/CODE/SITE/index.html" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
